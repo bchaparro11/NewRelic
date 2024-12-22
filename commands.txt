@@ -1,0 +1,18 @@
+Python:
+
+    Installing:
+    sudo python3 -m pip install newrelic
+
+    Installing:
+    curl -Ls https://download.newrelic.com/install/newrelic-cli/scripts/install.sh | bash && sudo NEW_RELIC_API_KEY=USER_KEY NEW_RELIC_ACCOUNT_ID=ACCOUNT_ID /usr/local/bin/newrelic install -n logs-integration
+
+    Executing:
+    NEW_RELIC_CONFIG_FILE=newrelic.ini newrelic-admin run-program uvicorn main:app --host 0.0.0.0 --port 8000 --reload
+
+Node:
+
+    Installing:
+    npm install newrelic --save
+
+    Executing:
+    NEW_RELIC_APP_NAME=node-test NEW_RELIC_LICENSE_KEY=LICENSE_KEY node --experimental-loader=newrelic/esm-loader.mjs main.js
