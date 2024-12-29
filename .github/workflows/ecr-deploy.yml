@@ -15,6 +15,7 @@ jobs:
       - name: Testing
         run: |
             echo "Testing New Relic"
+            echo "Another test"
 
     #   - name: Log in to Amazon ECR
     #     id: login-ecr
