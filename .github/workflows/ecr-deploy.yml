@@ -22,7 +22,7 @@ jobs:
             echo "Testing New Relic"
 
             echo -e "\n\nFIRST ONE\n\n"
-            envsubst < .env.example > .env
+            # envsubst < .env.example > .env
 
             echo -e "\n\nSECOND ONE\n\n"
             cat Dockerfile
