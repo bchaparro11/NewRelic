@@ -21,13 +21,13 @@ jobs:
         run: |
             echo "Testing New Relic"
 
-            echo -e "\nFIRST ONE\n"
+            echo -e "\n\nFIRST ONE\n\n"
             cat .env.example
             envsubst < .env.example > .env
 
-            echo -e "\nSECOND ONE\n"
+            echo -e "\n\nSECOND ONE\n\n"
             cat .env.example
-            
+
             # cat Dockerfile
             # envsubst < Dockerfile > Dockerfile
             # echo -e "\nSECOND ONE"
