@@ -1,0 +1,3 @@
+FROM node
+
+ENV VAR1=123456789
