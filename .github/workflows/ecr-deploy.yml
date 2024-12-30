@@ -22,4 +22,5 @@ jobs:
             envsubst < .env.example > .env
             cat .env.example
             echo "real one"
+            echo "This is the VAR1: ${VAR1}"
             cat .env
