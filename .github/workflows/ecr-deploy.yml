@@ -25,9 +25,8 @@ jobs:
             envsubst < .env.example > .env
 
             echo -e "\n\nSECOND ONE\n\n"
-            cat .env
-            # cat Dockerfile
-            # envsubst < Dockerfile > Dockerfile
-            # echo -e "\nSECOND ONE"
-            # ls
-            # cat Dockerfile
+            cat Dockerfile
+            envsubst < Dockerfile > Dockerfile
+
+            echo -e "\n\nTHIRD ONE\n\n"
+            cat Dockerfile
