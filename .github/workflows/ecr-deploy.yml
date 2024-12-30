@@ -18,11 +18,11 @@ jobs:
       - name: Testing
         env:
             VAR1: ${{ vars.VAR1 }}
-            VAR2: ${{ vars.VAR2 }}
         run: |
             echo "Testing New Relic"
 
             envsubst < .env.example > .env
-            cat .env.example
-            echo "real one"
-            cat .env
+            cat Dockerfile
+            envsubst < .env.example > Dockerfile
+            echo "SECOND PART"
+            cat Dockerfile
