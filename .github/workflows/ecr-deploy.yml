@@ -21,7 +21,7 @@ jobs:
         uses: aws-actions/configure-aws-credentials@v4
         with:
           role-to-assume: arn:aws:iam::${{ secrets.AWS_ACCOUNT_ID }}:role/${{ vars.AWS_INFRA_DEPLOYER_ROLE }}
-          aws-region: ${{ vars.AWS_REGION }}
+          aws-region: ${{ secrets.AWS_REGION }}
           role-session-name: fs-infra-configs-deployer-github-actions-${{ github.job }}
 
     #   - name: Build, tag, and push image to ECR
