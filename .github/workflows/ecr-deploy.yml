@@ -22,4 +22,7 @@ jobs:
             echo "Testing New Relic"
 
             envsubst < .env.example > .env
-            envsubst < Dockerfile | cat
+            cat Dockerfile
+            envsubst < Dockerfile > Dockerfile
+            echo "SECOND ONE"
+            cat Dockerfile
