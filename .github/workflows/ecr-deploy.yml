@@ -25,4 +25,5 @@ jobs:
             cat Dockerfile
             envsubst < Dockerfile > Dockerfile
             echo "SECOND ONE"
+            ll
             cat Dockerfile
