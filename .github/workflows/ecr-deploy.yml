@@ -20,9 +20,16 @@ jobs:
             VAR1: ${{ vars.VAR1 }}
         run: |
             echo "Testing New Relic"
+
+            echo -e "\nFIRST ONE\n"
+            cat .env.example
             envsubst < .env.example > .env
-            cat Dockerfile
-            envsubst < Dockerfile > Dockerfile
-            echo -e "\nSECOND ONE"
-            ls
-            cat Dockerfile
+
+            echo -e "\nSECOND ONE\n"
+            cat .env.example
+            
+            # cat Dockerfile
+            # envsubst < Dockerfile > Dockerfile
+            # echo -e "\nSECOND ONE"
+            # ls
+            # cat Dockerfile
