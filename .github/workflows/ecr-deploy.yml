@@ -22,12 +22,10 @@ jobs:
             echo "Testing New Relic"
 
             echo -e "\n\nFIRST ONE\n\n"
-            ls -a
             envsubst < .env.example > .env
 
             echo -e "\n\nSECOND ONE\n\n"
-            ls -a
-
+            cat .env
             # cat Dockerfile
             # envsubst < Dockerfile > Dockerfile
             # echo -e "\nSECOND ONE"
