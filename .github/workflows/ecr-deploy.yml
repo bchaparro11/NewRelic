@@ -6,9 +6,9 @@ on:
       environment:
         required: true
         type: string
-      app:
-        required: true
-        type: string
+      # app:
+      #   required: true
+      #   type: string
 permissions:
   id-token: write
   contents: read
