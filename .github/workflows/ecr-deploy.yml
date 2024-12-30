@@ -17,15 +17,12 @@ jobs:
         uses: actions/checkout@v3
       - name: Testing
         env:
-            var2: ${{ vars.VAR1 }}
+            VAR1: ${{ vars.VAR1 }}
+            VAR2: ${{ vars.VAR2 }}
         run: |
             echo "Testing New Relic"
-            echo "Another test"
 
-            echo "THIS IS THE VAR"
-            echo "${VAR1}"
-            # envsubst < .env.example > .env
-            # cat .env.example
-            # echo "real one"
-            # echo "This is the VAR1: ${VAR1}"
-            # cat .env
+            envsubst < .env.example > .env
+            cat .env.example
+            echo "real one"
+            cat .env
